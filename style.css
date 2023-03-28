@@ -9,9 +9,9 @@
   }
 
 :root {
-    --color1: rgb(36, 38, 54);
-    --color2: rgb(230, 239, 250);
-    --color3: rgb(133, 118, 185);
+    --color1: rgb(33, 35, 56);
+    --color2: rgb(197, 213, 233);
+    --color3: rgb(245, 255, 255);
 }
 
 /* HEADER START */
@@ -28,7 +28,7 @@
     text-align: right;
     height: fit-content;
     display: flex;
-    padding: 2px;
+    padding: 5px;
     padding-left: 30px;
     background-color: var(--color2);
   }
@@ -71,18 +71,18 @@ text-align: center;
     header h2{
         color: var(--color1);
         background-color: var(--color2);
-        padding: 2px;
+        padding: 5px;
     }
 /* HEADER END */
     
 /* MAIN START */
 main{
-    border: 3px solid rgb(77, 7, 99);
+    border: 3px solid var(--color3);
     margin: 2px;
 }
     
     main article{
-        border: 3px solid rgb(121, 9, 106);
+        border: 3px solid var(--color3);
         margin: 2px;
         display: flex;
         min-height: 23vh;
@@ -91,54 +91,65 @@ main{
         article h1{
             min-width: 6%;
             text-align: right;
-            border-right: 3px solid rgb(121, 9, 106);
+            border-right: 3px solid var(--color1);
             margin: 5px;
-            padding: .1%
+            padding: .1%;
+            color: var(--color1);
         }
         
         article p{
-            border: 3px solid rgb(121, 9, 106);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            border: 3px solid var(--color3);
             margin: 2px;
             width: 94%;
+            color: var(--color1);
         }
 
     main .main{
         min-height: 50vh;
         display: flex;
-        border: 3px solid rgb(121, 9, 106);
+        border: 3px solid var(--color3);
         margin: 2px;
     }
 
         .main h1{
-            border-right: 3px solid rgb(121, 9, 106);
+            border-right: 3px solid var(--color1);
             padding: .1%;
             margin: 5px;
             min-width: 6%;
             text-align: right;
+            color: var(--color1);
         }
 
         .cards{
             display: flex;
             width: 96%;
             flex-wrap: wrap;
-            border: 3px solid rgb(121, 9, 106);
+            border: 3px solid var(--color3);
             margin: 2px;
         }
 
             #surf{ 
                 width: 98.3%;
+                height: 49%;
                 display: flex;
                 align-items: end;
-                border: 3px solid rgb(121, 9, 106);
+                border: 5px solid var(--color2);
                 margin: 2px;
+                background-color: var(--color1);
             } 
 
             .card{ 
                 width: 49%;
+                height: 24%;
                 display: flex;
                 align-items: end;
-                border: 3px solid rgb(121, 9, 106);
+                border: 5px solid var(--color2);
                 margin: 2px;
+                background-color: var(--color1);
             } 
 
                 .cardtext{
@@ -146,36 +157,54 @@ main{
                     flex-direction: column;
                     align-items: start;
                     justify-content: end;
-                    border: 3px solid rgb(121, 9, 106);
+                    border: 3px solid var(--color2);
                     margin-bottom: 10px;
                     height: fit-content;
+                    background-color: var(--color2);
+                }
+                .cardtext h3, .cardtext p{
+                    background-color: var(--color2);
+                    color: var(--color1)
                 }
 /* MAIN END */
 
 /* FOOTER START */
   footer{
     min-height: 13vh;
-    border: 3px solid blue;
+    border: 3px solid var(--color3);
     margin: 2px;
     display: flex;
+    justify-content: space-between;
   }
 
   footer h1{
     display: flex;
-    border-right: 3px solid rgb(51, 161, 212);
-    margin: 2px;
+    border-right: 3px solid var(--color1);
+    margin: 5px;
+    padding: .1%;
+    min-width: 6%;
+    font-size: 22px;
   }
 
   footer .footnav{
     display: flex;
-    justify-content: space-around;
-    border: 3px solid rgb(51, 161, 212);
+    justify-content: center;
+    border: 3px solid var(--color3);
     margin: 2px;
   }
 
+  footer ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   footer li{
-    border: 3px solid rgb(51, 161, 212);
-    padding: .1%;
+    text-align: center;
+    flex-wrap: wrap;
+    border-bottom: 3px solid var(--color1);
+    display: flex;
     margin: 5px;
-    min-width: 6%;
+    font-size: large;
+    margin-right: 250px;
   }
