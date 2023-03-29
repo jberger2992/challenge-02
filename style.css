@@ -64,6 +64,13 @@
             font-size: large;
         }
 
+        nav a{
+            font-size: large;
+            color: var(--color2);
+            background-color: var(--color1);
+            text-decoration: none;
+        }
+
     header section{
 text-align: center;
     }
@@ -140,6 +147,7 @@ main{
                 border: 5px solid var(--color2);
                 margin: 2px;
                 background-color: var(--color1);
+                opacity: 0.95;
             } 
 
             .card{ 
@@ -150,7 +158,8 @@ main{
                 border: 5px solid var(--color2);
                 margin: 2px;
                 background-color: var(--color1);
-            } 
+                opacity: 0.95;
+            }
 
                 .cardtext{
                     display: flex;
@@ -208,3 +217,24 @@ main{
     font-size: large;
     margin-right: 250px;
   }
+
+  footer a{
+    font-size: large;
+    color: var(--color1);
+    background-color: var(--color3);
+    text-decoration: none;
+}
+
+/*HOVER EFFECTS*/
+
+.card:hover, #surf:hover{
+    opacity: 1;
+}
+
+nav a:hover{
+    color: aliceblue;
+}
+
+footer a:hover{
+    color: rgb(29, 38, 134);
+}
