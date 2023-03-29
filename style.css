@@ -103,6 +103,7 @@ main{
             padding: .1%;
             color: var(--color1);
         }
+
         
         article p{
             display: flex;
@@ -237,4 +238,10 @@ nav a:hover{
 
 footer a:hover{
     color: rgb(29, 38, 134);
+}
+
+@media screen and (max-width: 768px){
+    .card{
+        width: 98.6%;
+    }
 }
